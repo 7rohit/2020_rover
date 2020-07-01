@@ -2,4 +2,6 @@
 <launch>    
 	<include file="$(find rover_sim)/launch/default.launch"/>
 	<node name="execy" pkg="rove" type="execy" output="screen"/>
+	<node name="poser" pkg="rove" type="poser"/>
+	<node name="gps_cpp" pkg="rove" type="gps_cpp"/>
 </launch>
